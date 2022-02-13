@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Formular contact</h2>
+  <form id="inregistrare" action="http://localhost/mysite/demo.php" method="post" enctype="multipart/form-data">
+    <label for="orasul">Orasul</label>
+    <select name="orasul" id="orasul" name="oras">
+    <option value="0">Selecteaza</option>
+    <option value="1">Bucuresti</option>
+    <option value="2">Constanta</option>
+    <option value="3">Cluj</option>
+  </select>
+    <br>
+
+    <label for="cursuri">Cursuri la care doriti sa va inscrieti</label>
+    <select name="cursuri" id="cursuri" multiple>
+      <option value="PHP">PHP</option>
+      <option value="HTML">HTML</option>
+      <option value="JAVA">JAVA</option>
+      <option value="Photoshop">Photoshop</option>
+    </select>
+    <br>
+
+    <label for="mesaj">Mesaj</label>
+    <textarea name="mesaj" id="mesaj" cols="30" rows="10" maxlength="160"></textarea>
+    <br>
+
+    <label for="CV">CV</label>
+    <input type="file" name="form-control-file" id="cv" name="cv">
+    <br>
+
+    <fieldset class="form-group">
+      <legend>Program cursuri</legend>
+    <input type="radio" name="program" id="dimineata" checked>
+    <label for="dimineata">dimineata</label>
+    <input type="radio" name="program" id="la pranz">
+    <label for="la pranz">la pranz</label>
+    <input type="radio" name="program" id="seara">
+    <label for="seara">seara</label>
+  </fieldset>
+
+    <br>
+    <input type="checkbox" name="Termeni" id="Termeni" checked>
+    <label for="Termeni">Termeni si conditii</label>
+    <input type="checkbox" name="newsletter" id="newsletter">
+    <label for="newsletter">Va abonati la newsletter</label>
+
+    <br>
+    <input type="submit" value="Trimite datele">
+    
+
+  </form>
+</body>
+</html>
